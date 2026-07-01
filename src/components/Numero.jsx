@@ -1,17 +1,19 @@
 function Numero({ numero, participante }) {
+  const vendido = !!participante;
+
   return (
     <button
       style={{
         width: "60px",
         height: "60px",
-        margin: "5px",
-        borderRadius: "10px",
         border: "none",
-        background: participante ? "#e74c3c" : "#2ecc71",
-        color: "white",
+        borderRadius: "10px",
+        backgroundColor: vendido ? "#e74c3c" : "#2ecc71",
+        color: "#fff",
         fontWeight: "bold",
         fontSize: "16px",
         cursor: "pointer",
+        transition: "0.2s",
       }}
     >
       {numero}
