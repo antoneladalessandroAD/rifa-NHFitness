@@ -9,7 +9,7 @@ import {
 import { db } from "../firebase/config";
 import Numero from "./Numero";
 import Formulario from "./Formulario";
-import logo from "./logo.png";
+import logo from "./logo.jpg";
 
 function Rifa() {
   const [numeros, setNumeros] = useState([]);
